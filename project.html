@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Сайт о Нелли</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Нелли</h1>
+    <button id="themeToggleBtn">🌙</button>
+    <nav>
+      <ul>
+        <li><a href="#bio">Биография</a></li>
+        <li><a href="#photos">Фото</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="bio" class="section fade-in">
+    <h2>Биография</h2>
+    <p> Всем приветик! Мне 69 лет. У меня есть ебанутая подруга, которую я хочу жоско в жопу. Я люблю готовить людей, и держу детей в подвале 🌊</p>
+  </section>
+
+  <section id="photos" class="section fade-in">
+    <h2>Фотографии</h2>
+    <div class="gallery">
+      <img src="photo_2025-04-14_20-07-32.jpg" alt="Нелли">
+      <img src="photo_2025-05-02_21-05-38 (2).jpg" alt="Нелли">
+      <img src="photo_2025-05-02_21-05-38.jpg" alt="Нелли">
+    </div>
+  </section>
+
+  <section id="contact" class="section fade-in">
+    <h2>Написать сообщение</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Запомни, чтобы начать с ней общаться тебе нужно купить ебейший букет и коробку цветов" required />
+      <input type="email" placeholder="Email(так просто с тобой общаться не начнет, она не дура)" required />
+      <textarea placeholder="Напиши что то ахуенное, чтобы она сразу в тебя втюрилась" rows="4" required></textarea>
+      <button type="submit">Не отправил - ссыкун</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Сайт о Нелли</p>
+  </footer>
+
+  <button id="scrollTopBtn">↑</button>
+
+  <!-- Плавающие сердечки -->
+  <script>
+    for (let i = 0; i < 20; i++) {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDelay = Math.random() * 10 + 's';
+      document.body.appendChild(heart);
+    }
+  </script>
+
+  <script src="project.js"></script>
+</body>
+</html>
